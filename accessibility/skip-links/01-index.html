@@ -11,23 +11,38 @@
       name="description"
       content="Description of the page less than 150 characters"
     />
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
-    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="00-styles.css" />
+    <link rel="stylesheet" href="01-styles.css" />
   </head>
   <body>
-    <!– Header –>
+    <!-- Skip links -->
+    <nav aria-label="Skip links">
+      <ul class="off-screen">
+        <li>
+          <a href="#a11y-primary-nav" class="skip-link"
+            >Skip to primary navigation</a
+          >
+        </li>
+        <li>
+          <a href="#a11y-main-content" class="skip-link"
+            >Skip to main content</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!--Header -->
     <header class="header" data-section-theme="dark">
       <div class="container">
         <div class="header-container">
           <div class="header-logo">
             <a href="/">
               <img
-                src="./images/logo-white.png"
+                src="../images/logo-white.png"
                 alt="Techium logo"
                 width="160"
                 height="40"
@@ -38,7 +53,7 @@
           <label class="menu-icon" for="menu-btn">
             <span class="navicon"></span>
           </label>
-          <nav class="navbar-menu">
+          <nav class="navbar-menu" id="a11y-primary-nav" tabindex="-1">
             <ul class="nav">
               <li class="nav-item">
                 <a href="/" class="nav-link">Home</a>
@@ -91,10 +106,10 @@
         </div>
       </div>
     </header>
-    <!– Main –>
-    <main>
+    <!--Main -->
+    <main id="a11y-main-content" tabindex="-1">
       <h1 class="visually-hidden">Homepage</h1>
-      <!– Hero section –>
+      <!--Hero section -->
       <section class="section-hero hero-homepage" data-section-theme="dark">
         <div class="container">
           <div class="section-body">
@@ -105,7 +120,7 @@
           </div>
         </div>
       </section>
-      <!– Services section –>
+      <!--Services section -->
       <section id="services" class="section section-services">
         <div class="container">
           <header class="section-header">
@@ -148,7 +163,7 @@
           </div>
         </div>
       </section>
-      <!– Works section –>
+      <!--Works section -->
       <section
         id="works"
         class="section section-works"
@@ -165,7 +180,7 @@
                 <article class="card-work">
                   <div class="card-outer">
                     <div class="card-image">
-                      <img src="./images/pic-work-01.jpg" alt="" />
+                      <img src="../images/pic-work-01.jpg" alt="" />
                     </div>
                     <div class="card-inner">
                       <h3 class="card-title">
@@ -179,7 +194,7 @@
                 <article class="card-work">
                   <div class="card-outer">
                     <div class="card-image">
-                      <img src="./images/pic-work-02.jpg" alt="" />
+                      <img src="../images/pic-work-02.jpg" alt="" />
                     </div>
                     <div class="card-inner">
                       <h3 class="card-title">
@@ -193,7 +208,7 @@
                 <article class="card-work">
                   <div class="card-outer">
                     <div class="card-image">
-                      <img src="./images/pic-work-03.jpg" alt="" />
+                      <img src="../images/pic-work-03.jpg" alt="" />
                     </div>
                     <div class="card-inner">
                       <h3 class="card-title">
@@ -207,7 +222,7 @@
           </div>
         </div>
       </section>
-      <!– About Us section –>
+      <!--About Us section -->
       <section id="about" class="section section-about-us">
         <div class="container">
           <header class="section-header">
@@ -220,7 +235,7 @@
                 <img
                   sizes="(max-width: 3000px) 40vw, 1200px"
                   srcset="
-                    ./images/responsive/about-us_icoxoo_c_scale,w_380.jpg   380w,
+                    ../images/responsive/about-us_icoxoo_c_scale,w_380.jpg   380w,
                     ../images/responsive/about-us_icoxoo_c_scale,w_853.jpg   853w,
                     ../images/responsive/about-us_icoxoo_c_scale,w_1200.jpg 1200w
                   "
@@ -258,7 +273,7 @@
           </div>
         </div>
       </section>
-      <!– Latest news section –>
+      <!--Latest news section -->
       <section id="latest_news" class="section section-latest-news">
         <div class="container">
           <header class="section-header">
@@ -272,11 +287,11 @@
                     <img
                       sizes="(max-width: 2250px) 40vw, 900px"
                       srcset="
-                        ./images/responsive/pic-article-01_l2waac_c_scale,w_380.jpg 380w,
+                        ../images/responsive/pic-article-01_l2waac_c_scale,w_380.jpg 380w,
                         ../images/responsive/pic-article-01_l2waac_c_scale,w_673.jpg 673w,
-                        ./images/responsive/pic-article-01_l2waac_c_scale,w_900.jpg 900w
+                        ../images/responsive/pic-article-01_l2waac_c_scale,w_900.jpg 900w
                       "
-                      src="./images/responsive/pic-article-01_l2waac_c_scale,w_900.jpg"
+                      src="../images/responsive/pic-article-01_l2waac_c_scale,w_900.jpg"
                       alt=""
                     />
                   </div>
@@ -298,11 +313,11 @@
                     <img
                       sizes="(max-width: 2250px) 40vw, 900px"
                       srcset="
-                        ./images/responsive/pic-article-02_xe0wgi_c_scale,w_380.jpg 380w,
-                        ./images/responsive/pic-article-02_xe0wgi_c_scale,w_682.jpg 682w,
-                        ./images/responsive/pic-article-02_xe0wgi_c_scale,w_900.jpg 900w
+                        ../images/responsive/pic-article-02_xe0wgi_c_scale,w_380.jpg 380w,
+                        ../images/responsive/pic-article-02_xe0wgi_c_scale,w_682.jpg 682w,
+                        ../images/responsive/pic-article-02_xe0wgi_c_scale,w_900.jpg 900w
                       "
-                      src="./images/responsive/pic-article-02_xe0wgi_c_scale,w_900.jpg"
+                      src="../images/responsive/pic-article-02_xe0wgi_c_scale,w_900.jpg"
                       alt=""
                     />
                   </div>
@@ -328,11 +343,11 @@
                     <img
                       sizes="(max-width: 2250px) 40vw, 900px"
                       srcset="
-                        ./images/responsive/pic-article-03_hzlhrf_c_scale,w_380.jpg 380w,
-                        ./images/responsive/pic-article-03_hzlhrf_c_scale,w_679.jpg 679w,
-                        ./images/responsive/pic-article-03_hzlhrf_c_scale,w_900.jpg 900w
+                        ../images/responsive/pic-article-03_hzlhrf_c_scale,w_380.jpg 380w,
+                        ../images/responsive/pic-article-03_hzlhrf_c_scale,w_679.jpg 679w,
+                        ../images/responsive/pic-article-03_hzlhrf_c_scale,w_900.jpg 900w
                       "
-                      src="./images/responsive/pic-article-03_hzlhrf_c_scale,w_900.jpg"
+                      src="../images/responsive/pic-article-03_hzlhrf_c_scale,w_900.jpg"
                       alt=""
                     />
                   </div>
@@ -352,7 +367,7 @@
           </div>
         </div>
       </section>
-      <!– Testimonials section –>
+      <!--Testimonials section -->
       <section id="testimonial" class="section section-testimonial">
         <div class="container">
           <header class="section-header">
@@ -419,7 +434,7 @@
           </div>
         </div>
       </section>
-      <!– Contact section –>
+      <!--Contact section -->
       <section id="contact" class="section section-contact">
         <div class="container">
           <header class="section-header">
@@ -439,7 +454,7 @@
         </div>
       </section>
     </main>
-    <!– Footer –>
+    <!--Footer -->
     <footer class="footer" data-section-theme="dark">
       <div class="container">
         <div class="row">

@@ -14,7 +14,7 @@
 .menu-line-1,
 .menu-line-2,
 .menu-line-3 {
-  background-color: #fefefe;
+  background-color: hwb(0 100% 0%);
   height: 1px;
   width: 45%;
   margin: 0.2rem;
@@ -41,8 +41,8 @@
 }
 .menu-open-button,
 .menu-item {
-  background-color: #cc1c3c;
-  border: 1px solid #94041e;
+  background-color: hwb(349 11% 20%);
+  border: 1px solid hwb(349 2% 42%);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -56,16 +56,16 @@
   visibility: hidden;
   transition: top 1s;
   z-index: 0;
-  color: #fff;
+  color: hwb(0 100% 0%);
 }
 .menu-item:hover {
-  background-color: #fff;
+  background-color: hwb(0 100% 0%);
 }
 .menu-item:hover i {
-  color: #94041e;
+  color: hwb(349 2% 42%);
 }
 i {
-  color: #ffffff;
+  color: hwb(0 100% 0%);
 }
 .menu-open:checked + .menu-open-button .menu-line-1,
 .menu-open:checked + .menu-open-button .menu-line-3 {

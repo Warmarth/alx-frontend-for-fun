@@ -1,4 +1,4 @@
 /* Sass file */
 @import '103-sort_list';
-$sorted_list: sort($list_to_sort);
+$s_l: sort(ls);
 @debug $sorted_list;

@@ -1,5 +1,7 @@
-@for $i from 1 through 4 {
-    .col-#{$i} {
-        width: percentage(1 / $i);
+@import "11-photos.scss";
+
+@each $name in $list-names {
+    .photo-#{$name} {
+        background: image-url("photos/#{$name}.jpg") no-repeat;
     }
 }
